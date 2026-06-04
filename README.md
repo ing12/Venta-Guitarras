@@ -1,6 +1,6 @@
 # React + TypeScript + Vite
 
-LinkPage:  https://ing12.github.io/Venta-Guitarras/
+Demo:  https://ing12.github.io/Venta-Guitarras/
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
