@@ -30,7 +30,11 @@ export default function Header({cart, dispatch } : HeaderProps ) {
                         <div 
                             className="carrito"
                         >
-                            <img className="img-fluid" src="/img/carrito.png" alt="imagen carrito" />
+                            <img className="img-fluid" 
+                                 src={`${window.location.pathname.includes('Venta-Guitarras')
+                                        ? '/Venta-Guitarras'
+                                        : ''}/img/carrito.png`} 
+                                 alt="imagen carrito" />
 
                             <div id="carrito" className="bg-white p-3">
                                 {isEmpty ? (
@@ -53,7 +57,9 @@ export default function Header({cart, dispatch } : HeaderProps ) {
                                                     <td>
                                                         <img 
                                                             className="img-fluid" 
-                                                            src={`/img/${guitar.image}.jpg`}
+                                                            src={`${window.location.pathname.includes('Venta-Guitarras')
+                                                                ? '/Venta-Guitarras'
+                                                                : ''}/img/${guitar.image}.jpg`}
                                                             alt="imagen guitarra" 
                                                         />
                                                     </td>
